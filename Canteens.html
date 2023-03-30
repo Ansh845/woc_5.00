@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canteen_status.css">
+</head>
+<body>
+    <div style="background-color: white;height: 800px;display: none;" id="next_page">
+        <table>
+            <th>Name of the Canteen</th>
+            <tr>Ansh</tr>
+            
+            <th>Name of the Canteen Owner</th>
+            <tr></tr>
+    
+            <th>Contact number</th>
+            <tr></tr>
+    
+            <th>Password</th>
+            <tr></tr>
+        
+    
+        </table>
+    </div>
+   
+    <script>
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getDatabase, ref, set, onValue, update, remove} from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
+
+const firebaseConfig = {
+      //****************** add your configaration here *******************//
+      apiKey: "AIzaSyBf_inD4Hqb2zqkmCuha69YEEgZ0EvSdDI",
+  authDomain: "canteen-live-status-65e71.firebaseapp.com",
+  databaseURL: "https://canteen-live-status-65e71-default-rtdb.firebaseio.com",
+  projectId: "canteen-live-status-65e71",
+  storageBucket: "canteen-live-status-65e71.appspot.com",
+  messagingSenderId: "427128725985",
+  appId: "1:427128725985:web:161d9f41d3e126af35b2a0",
+  measurementId: "G-YH01SPNTT2"
+    };
+  
+      // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+       const database = getDatabase(app);
+
+
+
+       
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Central</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="log_mera.jpeg">
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js" type="module"></script>
+      
+    
+
+</head>
+<header>
+   
+</header>
+<body>
+
+    <img src="sidebar-2.png" alt="not there" id="sidebar" style="display: none;">
+    
+
+    <div id="drop_down" style="display: none;z-index: 10;" onmouseover="document.getElementById('drop_down').style.display = 'block';" onmouseout="document.getElementById('drop_down').style.display = 'none';">
+        <a href="Login_window.html" ><h2 style="background-color: white;margin-top: 5%;text-align: center; color: black;margin-bottom: 0.4cm;text-decoration: none;">Login</h2><hr></a>
+        <a href="sign_up_window.html" style="text-decoration: none;"><h2 style="background-color: white;margin-top: 5%;text-align: center;color: black; " id="signup">Signup</h2></a>
+      </div>
+     
+    <nav>
+        <h1 style="margin-left: 60px; font-size: 40px;margin-top: 25px;font-family: cursive;" ></h1>
+        <ul>
+            <img src="log_mera.jpeg" alt="" height="147px" width="147px" style="float: left; border-radius: 50%; margin-top: -12px; margin-left: -1px;">
+           <a href="#" class="nav_btn1"  title="Click here to redirect to login page" onmouseover="document.getElementById('drop_down').style.display = 'block';" > <li class="li1"><b> Login/Signup</b></li></a>
+           <a href="index.html" class="nav_btn3" title="get back to home page"><li class="li3"><b>Home</b></li></a>
+                
+        </ul>
+    </nav>
+
+
+    <script type="module">
+        document.getElementsByClassName("nav_btn1").addEventListener('click',(event)=>{
+            event.preventDefault()
+           })
+        
+    </script>
+
+
+
+<div><h2 class="container"> Welcome to Canteen Central website !</h2></div>
+<div class="lds-circle"><div></div></div>
+    <span style="z-index: -1;">
+        <h1 class="h1" style="border: 4px white solid;border-radius: 5%;margin-top: 1cm;">What do we Offer ?</h1>
+    </span>
+    <br><br><br>  
+    <div id="table_content">
+        <table>
+            <td>Register your canteen.</td>
+            <td>Check whether the registered canteen is open !</td>
+        </table>
+    </div>
+    <br><br>
+    <hr style="width:620px;margin-left:360px"><br><br>
+   <hr style="width:700px;margin-left:320px">
+    <br><br>
+<hr style="color: black;width: 800px;">
+    <div style="background-color: rgb(165, 184, 201); width: 800px;margin-top: 1cm;margin-left: 20%;height: 500px;border-radius: 4%;box-shadow: 15px -10px 15px white;" id="feel_div">
+        <h1 style="background: none;margin-left: 50%;margin-top: 4%;font-size: 45px;" id="feel">Feel like you have eyes everywhere...</h1>
+        <p style="width: 350px; position: relative;top: 130px;font-size: 30px;left: 10px;background-color: rgb(86, 122, 120);border-radius: 10%;padding: 3%;box-shadow: 15px 15px 2px black;color: rgb(233, 231, 139);">You can sit back at your hostel-room and view if your nearby canteen is open! This website not only saves your time and energy, you can also view menus of any canteen along with its public reviews.</p>
+        <img src="toggle_off.jfif" alt="image does not exist" title="toggle- on/off" id="off" >
+        <img src="toggle_on.jfif" alt="image does not exist" id="on" title="toggle- on/off">
+
+        <img src="open_canteen.jfif" alt="" title="canteen open"  style="float: right;margin-right: 17.5px;position: relative;height: 170px;width: 170px;margin-top: -78px;">
+        <img src="closed_canteen.jfif" alt="" title="canteen closed" style="float: right;margin-right: 2px;position: relative;height: 170px;width: 170px;margin-top: -78px;"
+        >
+    </div>    
+    <br><br>
+    <div class="view_status">
+        <h3 style="margin-left: 12%;font-size: 40px;">View Live Canteen Status</h3>
+        <a href="canteen_Status.html"><button type="button" title="click to view status" style="background-color: lightgrey;margin-left: 40%;border-radius: 10%;background-color: rgb(65, 114, 156);margin-bottom: 3%;font-size: 30px;cursor: pointer;">View</button></a>
+    </div>
+
+    <footer style="background-color: gray;height: 40px;position: sticky;margin:auto;margin-left: 0%;padding: 0%;width: auto;"><h1 style="margin-left: 400px
+    ;background:none;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h1></footer>
+
+</body>       
+</html>
